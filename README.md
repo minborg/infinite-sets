@@ -36,7 +36,6 @@ public class Main {
         System.out.println("contains A: " + first.contains("A"));
 
         Set<Integer> first2 = ImmutableStreamSet.of(() -> Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9));
-        System.out.println(Collections.singleton(1).contains(1l));
         System.out.println(first2);
 
         System.out.println(primeLongSet().contains(3l));
