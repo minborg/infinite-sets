@@ -1,7 +1,9 @@
 # infinite-sets
-A Demonstration of Infinite Sets
+A Demonstration of Infinite Sets under Java 9. You could easily backport the module to Java 8.
 
 This is how you could use the code:
+
+### Main.java
 ```
 import com.speedment.infinite_sets.ImmutableStreamSet;
 import static com.speedment.infinite_sets.Sets.*;
