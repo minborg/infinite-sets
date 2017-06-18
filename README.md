@@ -1,7 +1,7 @@
 # infinite-sets
 A Demonstration of Infinite Sets under Java 9. You could easily backport the module to Java 8.
 
-This is how you could use the code:
+This is how you could use this module from your code:
 
 ### Main.java
 ```
