@@ -51,7 +51,7 @@ public class Main {
 
 You need to declade a module dependency before you use the module. This is how it might look like:
 
-###module-info.java
+### module-info.java
 ```
 module Infinite_sets_app {
     requires com.speedment.infinite_sets;
