@@ -51,7 +51,7 @@ public final class FibonacciLongSet implements ImmutableStreamSet<Long> {
         return SetUtil.toString(this);
     }
 
-    private class Fibonacci {
+    private static class Fibonacci {
 
         final long beforeLast;
         final long last;

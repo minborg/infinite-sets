@@ -2,7 +2,6 @@ package com.speedment.infinite_sets.internal;
 
 import com.speedment.infinite_sets.ImmutableStreamSet;
 import java.util.function.LongPredicate;
-import static java.util.stream.IntStream.rangeClosed;
 import java.util.stream.LongStream;
 import java.util.stream.Stream;
 
@@ -17,7 +16,8 @@ public final class PrimeLongSet implements ImmutableStreamSet<Long> {
     private PrimeLongSet() {
     }
 
-    private static final LongPredicate IS_PRIME = x -> rangeClosed(2, (int) (Math.sqrt(x))).allMatch(n -> x % n != 0);
+    private static final LongPredicate IS_PRIME =
+        x -> LongStream.rangeClosed(2, (long) Math.sqrt(x)).allMatch(n -> x % n != 0);
 
     @Override
     public Stream<Long> stream() {
@@ -28,7 +28,7 @@ public final class PrimeLongSet implements ImmutableStreamSet<Long> {
 
     @Override
     public int size() {
-        return Integer.MAX_VALUE; 
+        return Integer.MAX_VALUE;
     }
 
     @Override
